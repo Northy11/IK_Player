@@ -25,14 +25,14 @@ public class Hand : MonoBehaviour
     internal void SetGrip(float v)
     {
         gripTarget = v;
-        Debug.Log(gripTarget);
+        //Debug.Log(gripTarget);
 
     }
 
     internal void SetTrigger(float v)
     {
         triggerTarget = v;
-        Debug.Log("Trigger: " +triggerTarget);
+        //Debug.Log("Trigger: " +triggerTarget);
     }
 
     // Start is called before the first frame update
