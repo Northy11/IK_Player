@@ -17,12 +17,12 @@ public class Bullet : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         //If boss does damage
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Damage");
+            collision.gameObject.GetComponent<BossHealth>().TakeDamage(damage);
         }
         Destroy(this.gameObject, 0.5f);
     }
